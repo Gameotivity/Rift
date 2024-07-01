@@ -1,8 +1,8 @@
 .wrapper {
     height: 100vh;
     width: 100vw;
-    background: rgb(200,32,144);
-    background: linear-gradient(0deg, rgba(200,32,144,1) 0%, rgba(106,20,209,1) 100%);
+    background-color: rgb(35,24,49);
+    background-color: linear-gradient(0deg, rgba(35,24,49,1) 0%, rgba(57,40,74,1) 25%, rgba(57,40,74,1) 75%, rgba(35,24,49,1) 100%);
     position: relative;
 }
 
@@ -51,8 +51,8 @@
     margin-right: 20px;
 }
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
     border-radius: 7px;
     overflow: hidden; 
@@ -99,5 +99,20 @@
         background-position: 80%;
         /* top:20%;
         height: 80%; */
+
+    }
+    .logo{
+        height : 30px;
+        width: auto;
+        padding-right: 45%;
+    }
+    .rifters-logo-white {
+        height: 100px;
+        width: 1000px;
+    }
+    .coming-soon{
+        padding-top: 20%;
+        height: 50px;
+        width: auto;
     }
 }

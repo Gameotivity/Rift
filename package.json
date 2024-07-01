@@ -23,8 +23,8 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.1"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "vite.config.js",
+  "description": "RiftStudioz is a Web3 Gaming Company working on the NFT Fashion.",
+  "main": "Rift",
   "author": "",
   "license": "ISC"
 }
