@@ -1,0 +1,103 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(200,32,144);
+    background: linear-gradient(0deg, rgba(200,32,144,1) 0%, rgba(106,20,209,1) 100%);
+    position: relative;
+}
+
+.character {
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url('../../assets/img/Character.gif');
+    z-index: 1;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box; 
+}
+.header {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap:20px;
+    z-index: 1;
+}
+.logo {
+    max-width: 100%;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+    translate: translateY(-50%);
+    margin-right: 20px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    overflow: hidden; 
+    border: 2px solid #000;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.centered-logo {
+    position: relative;
+}
+.rifters-logo-purple {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.rifters-logo-white {
+    display: block;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    z-index: 2;
+}
+.coming-soon {
+    display: block;
+    position: relative;
+    z-index: 2;
+    max-width: 30%;
+    top: 10px;
+    left: 3%;
+}
+@media screen and (max-width: 768px) {
+
+    .header {
+        justify-content: center;
+    }
+    .character {
+        background-position: 80%;
+        /* top:20%;
+        height: 80%; */
+    }
+}
