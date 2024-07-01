@@ -116,4 +116,8 @@
         height: 50px;
         width: auto;
     }
+    .social-icons img {
+        height: 25px;
+        width: 25px;
+    }
 }
