@@ -36,7 +36,7 @@
     z-index: 1;
 }
 .logo {
-    max-width: 100%;
+    max-width: 20%;
 }
 .social-icons {
     display: flex;
@@ -103,8 +103,7 @@
 
     }
     .logo{
-        height : 30px;
-        width: auto;
+       max-width: 55%;
         padding-right: 45%;
     }
     .rifters-logo-white {
