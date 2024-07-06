@@ -1,126 +1,149 @@
 .wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(35,24,49);
-    background-color: linear-gradient(0deg, rgba(35,24,49,1) 0%, rgba(57,40,74,1) 25%, rgba(57,40,74,1) 75%, rgba(35,24,49,1) 100%);
-    position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(35,24,49);
+  background-color: linear-gradient(0deg, rgba(35,24,49,1) 0%, rgba(57,40,74,1) 25%, rgba(57,40,74,1) 75%, rgba(35,24,49,1) 100%);
+  position: relative;
 }
 
 .character {
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    position: absolute;
-    background-image: url('../../assets/img/Character.gif');
-    z-index: 1;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url('../../assets/img/Character.gif');
+  z-index: 1;
+  animation: fadeIn 1s ease-out 1s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 
 .main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    box-sizing: border-box; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box; 
 }
 .header {
-    display: inline-flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap:20px;
-    z-index: 1;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap:20px;
+  z-index: 1;
 }
 .logo {
-    max-width: 20%;
+  max-width: 20%;
+  animation: fadeIn 0.6s ease-out 0.6s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 .social-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 50%;
-    translate: translateY(-50%);
-    margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  translate: translateY(-50%);
+  margin-right: 40px;
 
 }
 .social-icons img {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    border-radius: 7px;
-    overflow: hidden; 
-    border: 1px solid #000;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 7px;
+  overflow: hidden; 
+  border: 1px solid #000;
+  animation: fadeIn 0.4s ease-out 0.7s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 
 .content {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 .centered-logo {
-    position: relative;
+  position: relative;
 }
 .rifters-logo-purple {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: fadeIn 0.4s ease-out 0.4s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 .rifters-logo-white {
-    display: block;
-    position: relative;
-    max-width: 50%;
-    height: auto;
-    position: absolute;
-    top: 18%;
-    left: 3%;
-    z-index: 2;
+  display: block;
+  position: relative;
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+  top: 18%;
+  left: 3%;
+  z-index: 2;
+  animation: fadeIn 0.4s ease-out 0.4s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 .coming-soon {
-    display: block;
-    position: relative;
-    z-index: 2;
-    max-width: 30%;
-    top: 10px;
-    left: 3%;
+  display: block;
+  position: relative;
+  z-index: 2;
+  max-width: 30%;
+  top: 10px;
+  left: 3%;
+  animation: fadeIn 0.4s ease-out 0.4s forwards; /* Fade in animation */
+  opacity: 0; /* Initially hidden */
 }
 @media screen and (max-width: 768px) {
 
-    .header {
-        justify-content: center;
-    }
-    .character {
-        background-position: 80%;
-        /* top:20%;
-        height: 80%; */
+  .header {
+      justify-content: center;
+  }
+  .character {
+      background-position: 80%;
+      /* top:20%;
+      height: 80%; */
 
-    }
-    .logo{
-       max-width: 55%;
-        padding-right: 45%;
-    }
-    .rifters-logo-white {
-        height: 100px;
-        width: 1000px;
-    }
-    .coming-soon{
-        padding-top: 20%;
-        height: 50px;
-        width: auto;
-    }
-    .social-icons img {
-        height: 25px;
-        width: 25px;
-    }
-    .social-icons {
-    right: -33px;
-        
-    }
+  }
+  .logo{
+     max-width: 55%;
+      padding-right: 45%;
+  }
+  .rifters-logo-white {
+      height: 100px;
+      width: 1000px;
+  }
+  .coming-soon{
+      padding-top: 20%;
+      height: 50px;
+      width: auto;
+  }
+  .social-icons img {
+      height: 25px;
+      width: 25px;
+  }
+  .social-icons {
+  right: -33px;
+      
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
