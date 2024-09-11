@@ -26,7 +26,7 @@ const Hero = () =>{
         </div>
         <div className="social-icons">
           <a href="https://x.com/RIFTStudioz">  <img src={XIcon} alt="X" className="x-icon" /></a>
-          <a href="https://discord.gg/4tZjTwXtUj">  <img src={DiscordIcon} alt="Discord" className="discord-icon" /></a>
+          <a href="#">  <img src={DiscordIcon} alt="Discord" className="discord-icon" /></a>
           </div>
       </div>
     </div>
